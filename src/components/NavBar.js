@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import logo from '../images/logo.svg'
 import { FaAlignRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import Links from '../assets/Links'
+// import Links from '../assets/Links'
 
 export default class NavBar extends Component {
 
@@ -38,7 +38,10 @@ export default class NavBar extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">Rooms</Link>
+              <Link to="/rooms/">Rooms</Link>
+            </li>
+            <li>
+              <Link to="/error">Error</Link>
             </li>
           </ul>
         </div>
