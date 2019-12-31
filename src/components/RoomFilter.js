@@ -68,6 +68,65 @@ export default function RoomFilter({ rooms }) {
           </select>
         </div>
         {/* end of select Guest */}
+        {/* Room Price */}
+        <div className="form-group">
+          <label htmlFor="price">Room Price ${price}</label>
+          <input
+            className="form-control"
+            type="range"
+            name="price"
+            id="price"
+            min={minPrice}
+            max={maxPrice}
+            value={price}
+            onChange={handleChange} />
+        </div>
+        {/* End of Room Price */}
+        {/* Room Size */}
+        <div className="form-group">
+          <label htmlFor="size">Room Size</label>
+          <div className="size-inputs">
+            <input
+              className="size-input"
+              type="number"
+              name="minSize"
+              id="size"
+              value={minSize}
+              onChange={handleChange} />
+            <input
+              className="size-input"
+              type="number"
+              name="maxSize"
+              id="size"
+              value={maxSize}
+              onChange={handleChange} />
+          </div>
+        </div>
+        {/* End of Room Size */}
+        {/* Checkbox */}
+        <div className="form-group">
+          {/* Breakfast */}
+          <div className="single-extra">
+            <input
+              type="checkbox"
+              name="breakfast"
+              id="breakfast"
+              checked={breakfast}
+              onChange={handleChange} />
+            <label htmlFor="breakfast">Breakfast</label>
+          </div>
+          {/* Pets */}
+          <div className="single-extra">
+            <input
+              type="checkbox"
+              name="pets"
+              id="pets"
+              checked={pets}
+              onChange={handleChange} />
+            <label htmlFor="pets">Pets</label>
+          </div>
+        </div>
+        {/* End of Checkbox */}
       </form>
     </section>
   )
