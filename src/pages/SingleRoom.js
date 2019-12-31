@@ -24,7 +24,7 @@ export default class SingleRoom extends Component {
   render() {
     const { getRoom } = this.context
     const room = getRoom(this.state.payload)
-    console.log(room);
+    // console.log(room);
 
     if (!room) {
       return <div className="error">
@@ -48,7 +48,7 @@ export default class SingleRoom extends Component {
       images
     } = room
     const [mainImg, ...defaultImg] = images
-    console.log(images);
+    // console.log(images);
 
     return (
       <>

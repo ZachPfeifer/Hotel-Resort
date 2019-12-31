@@ -1,5 +1,11 @@
 import React, { Component } from 'react'
-import items from "./data";
+// import items from "./data";
+import Client from "./Contentful";
+
+// Client.getEntries({
+//   content_type: "hotelResort"
+// }).then(response => console.log(response.items)
+// )
 
 // @ts-ignore
 const RoomContext = React.createContext();
@@ -24,26 +30,55 @@ class RoomProvider extends Component {
   }
 
   //getData API
-  //COMING SOON
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "hotelResort",
+        order: "fields.price"
+      })
+      let rooms = this.formatData(response.items)
+      // console.log(rooms);
+      let featuredRooms = rooms.filter(room => room.featured === true);
+      //Filter Bar
+      let maxPrice = Math.max(...rooms.map(item => item.price))
+      let maxSize = Math.max(...rooms.map(item => item.size))
+      //Newly setState
+      this.setState({
+        rooms,
+        featuredRooms,
+        sortedRooms: rooms,
+        loading: false,
+        price: maxPrice,
+        maxPrice,
+        maxSize,
+      })
+    } catch (error) {
+      console.log(error);
 
+    }
+  }
 
   componentDidMount() {
-    let rooms = this.formatData(items)
-    console.log(rooms);
-    let featuredRooms = rooms.filter(room => room.featured === true);
+    this.getData()
+    //SECOND ATTEMPT (cleanup) 
+    // let rooms = this.formatData(items)
+    // console.log(rooms);
+    // let featuredRooms = rooms.filter(room => room.featured === true);
     //Filter Bar
-    let maxPrice = Math.max(...rooms.map(item => item.price))
-    let maxSize = Math.max(...rooms.map(item => item.size))
+    // let maxPrice = Math.max(...rooms.map(item => item.price))
+    // let maxSize = Math.max(...rooms.map(item => item.size))
     //Newly setState
-    this.setState({
-      rooms,
-      featuredRooms,
-      sortedRooms: rooms,
-      loading: false,
-      price: maxPrice,
-      maxPrice,
-      maxSize,
-    })
+    // this.setState({
+    //   rooms,
+    //   featuredRooms,
+    //   sortedRooms: rooms,
+    //   loading: false,
+    //   price: maxPrice,
+    //   maxPrice,
+    //   maxSize,
+    // })
+
+    //FIRST ATTEMPT:
     // let featuredRooms = rooms.filter(room => room.featuredRooms === true);
     // this.setState({
     //   rooms,
@@ -81,7 +116,7 @@ class RoomProvider extends Component {
     }, this.filterRooms)
 
     console.clear()
-    console.log(`this is name: ${name},value: ${value}`);
+    // console.log(`this is name: ${name},value: ${value}`);
   }
 
   filterRooms = () => {
@@ -90,8 +125,8 @@ class RoomProvider extends Component {
       type,
       capacity,
       price,
-      maxPrice,
-      minPrice,
+      // maxPrice,
+      // minPrice,
       maxSize,
       minSize,
       breakfast,
@@ -128,7 +163,7 @@ class RoomProvider extends Component {
       sortedRooms: tempRooms
     })
 
-    console.log('Hello from filterRooms');
+    // console.log('Hello from filterRooms');
   }
 
 
