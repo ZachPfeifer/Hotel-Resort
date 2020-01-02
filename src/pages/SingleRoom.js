@@ -5,6 +5,9 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
+import Carousels from "../assets/Carousels";
+
+
 
 export default class SingleRoom extends Component {
 
@@ -50,6 +53,7 @@ export default class SingleRoom extends Component {
     const [mainImg, ...defaultImg] = images
     // console.log(images);
 
+
     return (
       <>
         <StyledHero
@@ -62,6 +66,21 @@ export default class SingleRoom extends Component {
           </Banner>
         </StyledHero>
         <section className="single-room">
+
+          {/* FIXME CONSTRUCTION */}
+
+          <Carousels />
+
+          {/* <Slider {...settings}>
+            <div className="single-room-images">
+              {defaultImg.map((item, index) => {
+                return <img key={index} src={item} alt={name} />
+              })}
+            </div>
+          </Slider> */}
+
+
+          {/* FIXME END OF CONSTRUCTION */}
           <div className="single-room-images">
             {defaultImg.map((item, index) => {
               return <img key={index} src={item} alt={name} />

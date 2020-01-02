@@ -165,8 +165,12 @@ h6 {
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  min-height: calc(100vh - 66px);
+  background-image: url("./images/lucia-images/stock-cabins-full.jpg");
   min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* End of Hero */
 /* Banner */
@@ -286,6 +290,7 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
+  
 }
 .featured-rooms-center {
   width: 80vw;
@@ -312,6 +317,8 @@ h6 {
 .room {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  background: var(--darkGrey);
+
 }
 .room:hover {
   box-shadow: var(--darkShadow);
@@ -319,11 +326,14 @@ h6 {
 
 .img-container {
   position: relative;
+  
 }
 .img-container img {
   width: 100%;
   display: block;
   transition: var(--mainTransition);
+  max-width: 100%;
+  height: 200px;
 }
 .price-top {
   position: absolute;
@@ -369,6 +379,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+
 }
 /* end of room  */
 /* single room*/
@@ -386,6 +397,8 @@ h6 {
 }
 .single-room-images img {
   width: 100%;
+  height: 30vh;
+
   display: block;
 }
 .single-room-info {
@@ -446,6 +459,34 @@ h6 {
   }
 }
 /* end of single room*/
+/* single room carousel */
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 5%;
+}
+
+.slides .slick-next {
+  right: 5%;
+}
+/* end of single room carousel */
 /* roomlist */
 .roomslist {
   padding: 5rem 0;
