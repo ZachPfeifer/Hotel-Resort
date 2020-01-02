@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Hero>
-        <Banner title="luxurious rooms" subtitle="deluxe rooms starting at $299">
+        <Banner title="Welcome to The Lucia Lodge" subtitle="Over 100 years of Hospitality">
           <Link to="/rooms" className="btn-primary">
             our rooms
         </Link>
