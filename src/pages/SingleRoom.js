@@ -5,9 +5,12 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
-import Carousels from "../assets/Carousels";
+// import Carousels from "../assets/Carousels";
 
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default class SingleRoom extends Component {
 
@@ -24,7 +27,13 @@ export default class SingleRoom extends Component {
 
   static contextType = RoomContext
 
+
+
+
   render() {
+
+
+
     const { getRoom } = this.context
     const room = getRoom(this.state.payload)
     // console.log(room);
@@ -54,6 +63,17 @@ export default class SingleRoom extends Component {
     // console.log(images);
 
 
+    const settings = {
+      className: "slide",
+      dots: true,
+      lazyLoad: true,
+      centerMode: true,
+      infinite: true,
+      arrows: true,
+      // centerPadding: "60px",
+      slidesToShow: 2,
+      speed: 500
+    };
     return (
       <>
         <StyledHero
@@ -69,23 +89,28 @@ export default class SingleRoom extends Component {
 
           {/* FIXME CONSTRUCTION */}
 
-          <Carousels />
+          {/* <Carousels /> */}
 
-          {/* <Slider {...settings}>
-            <div className="single-room-images">
-              {defaultImg.map((item, index) => {
-                return <img key={index} src={item} alt={name} />
-              })}
-            </div>
-          </Slider> */}
+          <Slider {...settings}>
+            {defaultImg.map((item, index) => {
+              return (
+                <div className="single-room-images">
+                  <img key={index} src={item} alt={name} />
+                </div>
+              )
+            })
+            }
+          </Slider>
 
 
-          {/* FIXME END OF CONSTRUCTION */}
-          <div className="single-room-images">
+          {/* <div className="single-room-images">
             {defaultImg.map((item, index) => {
               return <img key={index} src={item} alt={name} />
             })}
-          </div>
+          </div> */}
+          {/* FIXME END OF CONSTRUCTION */}
+
+
           <div className="single-room-info">
             <article className="desc">
               <h3>Details</h3>
