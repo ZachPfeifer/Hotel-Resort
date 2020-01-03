@@ -66,11 +66,11 @@ export default class SingleRoom extends Component {
     const settings = {
       className: "slide",
       dots: true,
-      lazyLoad: true,
+      // lazyLoad: true,
       centerMode: true,
       infinite: true,
       arrows: true,
-      // centerPadding: "60px",
+      centerPadding: "60px",
       slidesToShow: 2,
       speed: 500
     };
@@ -126,6 +126,9 @@ export default class SingleRoom extends Component {
               </h6>
               <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
               <h6>{breakfast && "free breakfast included"}</h6>
+              <a href="https://us01.iqwebbook.com/LLCA968/">
+                <button className="btn-primary"> Reserve Now!</button>
+              </a>
             </article>
           </div>
         </section>
