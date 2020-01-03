@@ -1,6 +1,7 @@
 {
   "name": "hotel-clone",
   "version": "0.1.0",
+  "homepage": "react-hotel-resort-site.netlify.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
