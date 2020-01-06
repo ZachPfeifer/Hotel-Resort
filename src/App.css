@@ -17,7 +17,7 @@
 }
 /* globals */
 body {
-  padding-top: 66px;
+  /* padding-top: 66px!important; */
   color: var(--mainBlack);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -54,20 +54,20 @@ h6 {
 }
 
 .btn-primary {
-  display: inline-block;
-  text-decoration: none;
-  letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
-  padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  text-transform: uppercase;
-  cursor: pointer;
+  display: inline-block!important;
+  text-decoration: none!important;
+  letter-spacing: var(--mainSpacing)!important;
+  color: var(--mainBlack)!important;
+  background: var(--primaryColor)!important;
+  padding: 0.4rem 0.9rem!important;
+  border: 3px solid var(--primaryColor)!important;
+  transition: var(--mainTransition)!important;
+  text-transform: uppercase!important;
+  cursor: pointer!important;
 }
 .btn-primary:hover {
-  background: transparent;
-  color: var(--primaryColor);
+  background: transparent!important;
+  color: var(--primaryColor)!important;
 }
 .loading {
   text-transform: capitalize;
@@ -158,7 +158,7 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(100vh - 66px);
+  min-height: calc(80vh - 66px);
   background: url("./images/lucia-images/DefaultBcg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -168,6 +168,13 @@ h6 {
   min-height: calc(100vh - 66px);
   background-image: url("./images/lucia-images/stock-cabins-full.jpg");
   min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resturantHero {
+  min-height: calc(60vh - 66px);
+  background: url("./images/lucia-images/resturant.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,6 +264,8 @@ h6 {
   border: 3px groove #af9a7d;
   border-radius: 31px 0px 31px 0px;
   padding: 10px;
+  overflow: hidden;
+
 }
 
 .service span {
@@ -583,6 +592,75 @@ display: inline-block;
   }
 }
 /* end of rooms fitler*/
+
+/* resturant */
+
+/* lunch */
+.menu{
+  display: table-cell;
+  background-color: #af9a7d;
+  padding-top: 5px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.price-wrap{
+  /* position: relative; */
+    /* display: inline-block; */
+    vertical-align: top;
+    padding: 0px;
+    margin: 0 0 20px;
+}
+.price-header{
+      position: relative;
+    margin: 0 0 3px;
+}
+.price-price{
+      display: table-cell;
+    width: 1%;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+}
+.price-dots {
+    display: table-cell;
+    width: 50%;
+}
+
+.separator-dots {
+    display: block;
+    width: 100%;
+    border-bottom: 1px dashed #333;
+}
+.drinks ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+.drinks li{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.img-border{
+    padding: 4px;
+    border: 2px solid #af9a7d;
+    margin: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* end of lunch*/
+
+
+/* end of resturant*/
+
 /* credits */
 .credits{
   margin: 0 auto;
