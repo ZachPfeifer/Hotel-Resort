@@ -52,11 +52,11 @@ export default class Lunch extends Component {
 
   render() {
     return (
-      <section className="services">
-        <article>
+      <section className="services ">
+        <article className="ml-2 mr-2 white">
           <Title title="Lunch Menu" />
-          <main className=" row justify-content-center">
-            <div className="menu col-md-5 col-sm-12 float-left ">
+          <main className=" row justify-content-center ">
+            <div className="menu box col-md-5 col-sm-12 float-left ">
               <hr />
               {this.state.menu.map((item, index) => {
                 return <div key={index} className="price-wrap ml-3">
@@ -72,8 +72,8 @@ export default class Lunch extends Component {
               })}
             </div>
             <div className="offset-1 col-md-5 col-sm-12  float-right mt-5">
-              <img src={LunchImg} className="img-border img-fluid rounded" alt="Lunch Image" />
-              <ul className="drinks mt-3">
+              <img src={LunchImg} className="img-border img-fluid rounded mb-3" alt="Lunch Image" />
+              <ul className="drinks mt-3 menu ">
                 <h6 className="float-left mt-5 ml-2"><u>Beverages</u>:</h6>
                 <br />
                 {this.state.drinks.map((item, index) => {
