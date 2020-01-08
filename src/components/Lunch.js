@@ -72,7 +72,7 @@ export default class Lunch extends Component {
               })}
             </div>
             <div className="offset-1 col-md-5 col-sm-12  float-right mt-5">
-              <img src={LunchImg} className="img-border img-fluid rounded mb-3" alt="Lunch Image" />
+              <img src={LunchImg} className="img-border img-fluid rounded mb-3" alt="Lunch-Image" />
               <ul className="drinks mt-3 menu ">
                 <h6 className="float-left mt-5 ml-2"><u>Beverages</u>:</h6>
                 <br />

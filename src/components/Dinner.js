@@ -1,46 +1,94 @@
 import React, { Component } from 'react'
 import Title from "./Title";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import LunchImg from "../images/lucia-images/lunch.jpg";
+import Banner from './Banner';
 
-export default class Dinner extends Component {
+
+
+export default class Lunch extends Component {
 
   state = {
-    services: [
+    menu: [
       {
-        icons: <FaCocktail />,
-        title: "Evening Dining",
-        info: "In keeping with the family owned tradition of Lucia Lodge, the lodge restaurant offers true home - style cooking. Virtually all of our dressings and sauces are made from scratch on the premises.Enjoy fireside dining in our historic dining room or take in the fresh ocean air on deck.Either way, beautiful vistas of the coast accompany your meal. "
+        title: "Fried Chick",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$17.00"
       },
       {
-        icons: <FaHiking />,
-        title: "Endless Hiking",
-        info: "Numerous hiking trails wind through the rugged Santa Lucia Mountain range, traversing redwood canyons and sun-drenched ridges. Less strenuous but equally fun hikes can be made from well marked points of interest along the highway. Activities covered here are broken into three categories: beach access, hiking, and day trips."
+        title: "Lucia Burger",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$17.00"
+      }, {
+        title: "Black & Bleu Burger",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$17.00"
+      }, {
+        title: "California",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$17.00"
+      }, {
+        title: "Veggie",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$15.00"
+      }, {
+        title: "BLTA",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$17.00"
       },
       {
-        icons: <FaShuttleVan />,
-        title: "Gift Shop",
-        info: "The convenience store and gift shop is open from 8 AM to 8 PM daily in season (till 9 PM weekends). The store features deli items, beverages, select wines, grocery and camping supplies. The gift shop, located within the store, has a collection of books, cards, souvenirs and local art such as jade jewelry."
+        title: "Fish & Chips",
+        disc: "Fried Chicken Sandwitch with pickles, coldslaw, and buffalo sauce with a side of fries",
+        price: "$18.00"
+      },
+    ],
+    drinks: [
+      {
+        soda: "Coca-Cola, Sprite, Dr Pepper, Sprite, Diet Coke"
       },
       {
-        icons: <FaBeer />,
-        title: "Afternoon Lunch",
-        info: "In keeping with the family owned tradition of Lucia Lodge, the lodge restaurant offers true home - style cooking. Virtually all of our dressings and sauces are made from scratch on the premises.Enjoy fireside dining in our historic dining room or take in the fresh ocean air on deck.Either way, beautiful vistas of the coast accompany your meal. "
-      },
+        alc: "Pasifico"
+      }
     ]
   }
 
   render() {
     return (
-      <section className="services">
-        <Title title="services" />
-        <div className="services-center">
-          {this.state.services.map((item, index) => {
-            return <article key={index} className="service">
-              <span>{item.icons}</span>
-              <h6>{item.title}</h6>
-              <p><i>{item.info}</i></p>
-            </article>
-          })}
+      <section className="dinner">
+        <div className=" dinner-bg parallax mx-auto">
+          <div className="container mt-5  d-flex justify-content-center">
+            <div className="row">
+              <div className="col-12">
+                <Banner title="Dinner Menu" subtitle="Dine with an Ocean View" children="" />
+              </div>
+            </div>
+          </div>
+          <div className="container-fluid over-flow">
+            <div className="row m-5 bg-grey ">
+              <div className="col-lg-6 col-sm-12">
+                <h4><i> Entrees:  </i></h4>
+                {this.state.menu.map((item, index) => {
+                  return <div key={index} className="price-wrap ml-3">
+                    <h5 className="price-header float-left mr-3">{item.title}
+                    </h5>
+                    <div className="price-dots">
+                      <span className="separator-dots"></span>
+                    </div>
+                    <p className="price-price"><small><i>{item.price}</i></small></p>
+                    <p><i>{item.disc}</i></p>
+                    <hr />
+                  </div>
+                })}
+              </div>
+              <div className="col-lg-6 col-sm-12">
+                <h4><i>Beverages:</i></h4>
+                {this.state.drinks.map((item, index) => {
+                  return <div key={index} className="">
+                    <p> {item.soda}</p>
+                  </div>
+                })}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     )

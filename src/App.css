@@ -678,6 +678,35 @@ display: inline-block;
 
 /* end of lunch*/
 
+/* Dinner */
+.dinner {
+  /* color: var(--mainBlack); */
+overflow: visable;
+}
+.bg-grey{
+background-color: rgba(0, 0, 0, 0.5);
+color: var(--mainGrey);
+}
+.dinner-bg{
+    background-image: url(./images/lucia-images/resturant.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: 50% 64.95px;
+}
+
+.parallax {
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.over-flow{
+    /* overflow: visible; */
+    /* margin-top: -500px; */
+z-index: 2;
+}
+/* end of dinner*/
 
 /* end of resturant*/
 
