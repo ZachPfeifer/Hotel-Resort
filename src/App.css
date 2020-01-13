@@ -699,7 +699,7 @@ color: var(--mainGrey);
     background-attachment: fixed;
     background-position: 50% 0;
     background-repeat: no-repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .over-flow{
     /* overflow: visible; */
@@ -716,5 +716,6 @@ z-index: 2;
    text-align: center;
    padding: 2vh;
    background-color: #f7f7f7;
+   bottom: 0%;
 }
 /* end of credits */

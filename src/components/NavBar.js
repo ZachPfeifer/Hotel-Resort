@@ -17,7 +17,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="nav-center">
+        < div className="nav-center" >
           <div className="nav-header">
             <Link to="/">
               <img src={logo} alt="Beach Resort" />
@@ -47,8 +47,8 @@ export default class NavBar extends Component {
               <Link to="/resturant">Food & Dinning</Link>
             </li>
           </ul>
-        </div>
-      </nav>
+        </div >
+      </nav >
     )
   }
 }
