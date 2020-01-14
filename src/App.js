@@ -8,8 +8,9 @@ import Error from './pages/Error'
 import NavBar from './components/NavBar'
 import Credits from "./assets/Credits";
 import Resturant from './pages/Resturant';
-// import './App.css'
+import Cart from './pages/Cart'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/rooms" component={Rooms} />
         <Route exact path="/rooms/:payload" component={SingleRoom} />
         <Route exact path="/resturant" component={Resturant} />
+        <Route exact path="/cart" component={Cart} />
         <Route component={Error} />
       </Switch>
       <Credits />
