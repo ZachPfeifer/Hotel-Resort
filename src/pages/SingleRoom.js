@@ -16,10 +16,12 @@ export default class SingleRoom extends Component {
 
   constructor(props) {
     super(props)
-    // console.log(this.props);
+    console.log(this.props);
     this.state = {
       payload: this.props.match.params.payload,
-      defaultBcg
+      defaultBcg,
+      inCart: true,
+      carItem: []
     }
   }
 
@@ -36,19 +38,20 @@ export default class SingleRoom extends Component {
 
     const { getRoom } = this.context
     const room = getRoom(this.state.payload)
+    const inCart = this.state.inCart
     // console.log(room);
 
     if (!room) {
       return <div className="error">
         <h3>No Such Room could be Found... </h3>
-        {/* <h3>Loading... </h3> */}
+        <h3>Loading... </h3>
         <Link to='/rooms' className="btn-primary">
           Back to Rooms
         </Link>
       </div>
     }
 
-
+    //DATA
     const {
       name,
       description,
@@ -62,7 +65,7 @@ export default class SingleRoom extends Component {
     const [mainImg, ...defaultImg] = images
     // console.log(images);
 
-
+    //SLIDER SETTINGS
     const settings = {
       className: "slide",
       dots: true,
@@ -70,9 +73,35 @@ export default class SingleRoom extends Component {
       centerMode: true,
       infinite: true,
       arrows: true,
-      centerPadding: "60px",
+      centerPadding: "15px",
       slidesToShow: 2,
-      speed: 500
+      speed: 500,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
     return (
       <>
@@ -87,9 +116,8 @@ export default class SingleRoom extends Component {
         </StyledHero>
         <section className="single-room">
 
-          {/* FIXME CONSTRUCTION */}
+          {/* FIXME CONSTRUCTION (SLIDER) */}
 
-          {/* <Carousels /> */}
 
           <Slider {...settings}>
             {defaultImg.map((item, index) => {
@@ -103,11 +131,6 @@ export default class SingleRoom extends Component {
           </Slider>
 
 
-          {/* <div className="single-room-images">
-            {defaultImg.map((item, index) => {
-              return <img key={index} src={item} alt={name} />
-            })}
-          </div> */}
           {/* FIXME END OF CONSTRUCTION */}
 
 
@@ -116,19 +139,40 @@ export default class SingleRoom extends Component {
               <h3>Details</h3>
               <p>{description}</p>
             </article>
-            <article className="info">
-              <h3>Info</h3>
-              <h6><strong>price:</strong> ${price}</h6>
-              <h6><strong>size:</strong> {size} ft&sup2;</h6>
-              <h6><strong>Max Capacity: </strong>{
-                capacity > 1 ? `${capacity} people` : `${capacity} person`
-              }
-              </h6>
-              <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
-              <h6>{breakfast && "free breakfast included"}</h6>
-              <a href="https://us01.iqwebbook.com/LLCA968/">
-                <button className="btn-primary"> Reserve Now!</button>
-              </a>
+            <article className="info ">
+              <div className="row">
+                <div className="col-md-12">
+                  <h3>Info</h3>
+                  <h6><strong>price:</strong> ${price}</h6>
+                  <h6><strong>size:</strong> {size} ft&sup2;</h6>
+                  <h6><strong>Max Capacity: </strong>{
+                    capacity > 1 ? `${capacity} people` : `${capacity} person`
+                  }
+                  </h6>
+                  <h6>{pets ? 'pets allowed' : 'no pets allowed'}</h6>
+                  <h6>{breakfast && "free breakfast included"}</h6>
+                </div>
+              </div>
+              {/* FIXME CONSTRUCTION (CART) */}
+              <div className="row mt-5 float-right">
+                <div className="col-md-5 col-sm-12">
+                  {inCart === false
+                    ? <button
+                      className="btn-primary"
+                    > Remove from Cart</button>
+                    :
+                    <button
+                      className="btn-primary"
+                    > Add to Cart</button>
+                  }
+                </div>
+                <div className="col-md-1 col-sm-12"><br /></div>
+                <div className="col-md-5 col-sm-12">
+                  <a href="https://us01.iqwebbook.com/LLCA968/">
+                    <button className="btn-primary"> Reserve Now!</button>
+                  </a>
+                </div>
+              </div>
             </article>
           </div>
         </section>

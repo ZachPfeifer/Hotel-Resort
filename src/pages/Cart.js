@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Basket from "../components/Basket";
-// import { RoomContext } from '../context';
-import Client from "../Contentful";
+import { RoomContext } from '../context';
+// import Client from "../Contentful";
 
 
 export default class Cart extends Component {
@@ -13,39 +13,9 @@ export default class Cart extends Component {
     };
   }
 
-  // static contextType = RoomContext
-  componentWillMount() {
-    this.getData()
-  }
-
-  getData = async () => {
-    try {
-      let response = await Client.getEntries({
-        content_type: "hotelResort",
-        order: "fields.price"
-      })
-      let rooms = this.formatData(response.items)
-      // console.log(rooms);
-      let featuredRooms = rooms.filter(room => room.featured === true);
-      //Filter Bar
-      let maxPrice = Math.max(...rooms.map(item => item.price))
-      let maxSize = Math.max(...rooms.map(item => item.size))
-      //Newly setState
-      this.setState({
-        rooms,
-        featuredRooms,
-        sortedRooms: rooms,
-        loading: false,
-        price: maxPrice,
-        maxPrice,
-        maxSize,
-
-      })
-    } catch (error) {
-      console.log(error);
-
-    }
-  }
+  static contextType = RoomContext
+  // componentWillMount() {
+  // }
 
 
 

@@ -27,6 +27,9 @@ class RoomProvider extends Component {
     maxSize: 0,
     breakfast: false,
     pets: false,
+    //FIXME CART
+    inCart: false,
+    cartItems: []
   }
 
   //getData API
