@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Title from "./Title";
 import LunchImg from "../images/lucia-images/lunch.jpg";
-import Banner from './Banner';
+import Banner from './Utilities/Banner';
 
 
 
