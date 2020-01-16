@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import util from './Utility'
+import util from './Utilities/FormatCurrency'
 export default class Basket extends Component {
   render() {
     const { cartItems } = this.props;
