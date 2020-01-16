@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../components/Hero'
+import Hero from '../components/Utilities/Hero'
 import Banner from '../components/Utilities/Banner'
 import { Link } from "react-router-dom";
 import RoomsContainer from "../components/RoomsContainer";
