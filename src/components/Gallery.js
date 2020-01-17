@@ -26,18 +26,18 @@ export default class Gallery extends Component {
               </div>
             </div>
             <div className="gallery">
-              <img src="https://images7.alphacoders.com/906/thumb-350-906177.jpg" className="img img-1" alt="Gallery Image"></img>
-              <img src="http://www.lucialodge.com/activitiestop.jpg" className="img img-2" alt="Gallery Image"></img>
-              <img src="https://images8.alphacoders.com/943/thumb-350-943660.jpg" className="img img-3" alt="Gallery Image"></img>
-              <img src="https://images7.alphacoders.com/880/thumb-350-880547.jpg" className="img img-4" alt="Gallery Image"></img>
-              <img src="https://images2.alphacoders.com/843/thumb-350-843090.jpg" className="img img-5" alt="Gallery Image"></img>
-              <img src="https://images2.alphacoders.com/899/thumb-350-899247.jpg" className="img img-6" alt="Gallery Image"></img>
-              <img src="http://www.lucialodge.com/activities.valley.jpg" className="img img-7" alt="Gallery Image"></img>
-              <img src="http://www.lucialodge.com/about3.jpg" className="img img-8" alt="Gallery Image"></img>
-              <img src="https://images6.alphacoders.com/718/thumb-350-718026.jpg" className="img img-9" alt="Gallery Image"></img>
-              <img src="https://images3.alphacoders.com/695/thumb-350-695172.jpg" className="img img-10" alt="Gallery Image"></img>
-              <img src="http://www.lucialodge.com/activities.camal.jpg" className="img img-11" alt="Gallery Image"></img>
-              <img src="http://www.lucialodge.com/activities.willow.jpg" className="img img-12" alt="Gallery Image"></img>
+              <img src="https://images7.alphacoders.com/906/thumb-350-906177.jpg" className="img img-1" alt="Gallery "></img>
+              <img src="http://www.lucialodge.com/activitiestop.jpg" className="img img-2" alt="Gallery "></img>
+              <img src="https://images8.alphacoders.com/943/thumb-350-943660.jpg" className="img img-3" alt="Gallery "></img>
+              <img src="https://images7.alphacoders.com/880/thumb-350-880547.jpg" className="img img-4" alt="Gallery "></img>
+              <img src="https://images2.alphacoders.com/843/thumb-350-843090.jpg" className="img img-5" alt="Gallery "></img>
+              <img src="https://images2.alphacoders.com/899/thumb-350-899247.jpg" className="img img-6" alt="Gallery "></img>
+              <img src="http://www.lucialodge.com/activities.valley.jpg" className="img img-7" alt="Gallery "></img>
+              <img src="http://www.lucialodge.com/about3.jpg" className="img img-8" alt="Gallery "></img>
+              <img src="https://images6.alphacoders.com/718/thumb-350-718026.jpg" className="img img-9" alt="Gallery "></img>
+              <img src="https://images3.alphacoders.com/695/thumb-350-695172.jpg" className="img img-10" alt="Gallery "></img>
+              <img src="http://www.lucialodge.com/activities.camal.jpg" className="img img-11" alt="Gallery "></img>
+              <img src="http://www.lucialodge.com/activities.willow.jpg" className="img img-12" alt="Gallery "></img>
             </div>
           </div>
         </div>
