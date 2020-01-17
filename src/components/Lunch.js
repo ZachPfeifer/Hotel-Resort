@@ -54,7 +54,7 @@ export default class Lunch extends Component {
 
   render() {
     return (
-      <section className="lunch">
+      <section className="lunch mb-5">
         <div className=" lunch-bg parallax mx-auto">
           <div className="container mt-5  d-flex justify-content-center">
             <div className="row">

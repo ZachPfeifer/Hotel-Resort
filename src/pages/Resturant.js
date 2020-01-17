@@ -21,9 +21,12 @@ const Resturant = () => {
       <section id="Lunch">
         <Lunch />
       </section>
+      <div className="space">      </div>
       <section id="Dinner">
         <Dinner />
       </section>
+      <div className="space">      </div>
+
     </React.Fragment>
   )
 }
