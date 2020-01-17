@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import Title from "./Title";
-import LunchImg from "../images/lucia-images/lunch.jpg";
+// import Title from "./Title";
+// import LunchImg from "../images/lucia-images/lunch.jpg";
 import Banner from './Utilities/Banner';
+import EntreeIMG from "../images/lucia-images/Entree1.jpg";
 
 
 
@@ -65,10 +66,10 @@ export default class Lunch extends Component {
           <div className="container-fluid over-flow">
             <div className="row m-5 bg-grey ">
               <div className="col-lg-6 col-sm-12">
-                <h4><i> Entrees:  </i></h4>
+                <h3 className="text-gold m-2 pb-1"><i> Entrees:  </i></h3>
                 {this.state.menu.map((item, index) => {
                   return <div key={index} className="price-wrap ml-3">
-                    <h5 className="price-header float-left mr-3">{item.title}
+                    <h5 className="price-header float-left mr-3 text-gold">{item.title}
                     </h5>
                     <div className="price-dots">
                       <span className="separator-dots"></span>
@@ -79,11 +80,15 @@ export default class Lunch extends Component {
                   </div>
                 })}
               </div>
+
               <div className="col-lg-6 col-sm-12">
-                <h4><i>Beverages:</i></h4>
+                <div className="image-container mt-5 rounded pt-5 pr-5 offset-lg-2 col-lg-10">
+                  <img src={EntreeIMG} alt="Entree Image" className="img-border img-fluid rounded mb-3 p-1" />
+                </div>
+                <h4 className="text-gold m-2 pb-1"><i>Beverages:</i></h4>
                 {this.state.drinks.map((item, index) => {
-                  return <div key={index} className="">
-                    <p> {item.soda}</p>
+                  return <div key={index} className="mx-auto">
+                    <p className="ml-5"> {item.soda}</p>
                   </div>
                 })}
               </div>

@@ -97,6 +97,9 @@ background: url("../src/images/lucia-images/bg-tunnel.jpg") center/cover no-repe
 .text-gold{
   color: var(--darkGold);
 }
+.text-lt-gold{
+  color: var(--mainGold);
+}
 
 .box {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
@@ -615,7 +618,7 @@ display: inline-block;
 
 /* resturant */
 
-/* lunch */
+/* lunch OG*/
 .menu{
   display: table-cell;
   background-color: #af9a7d;
@@ -683,20 +686,33 @@ display: inline-block;
 
 /* end of lunch*/
 
+/* New Lunch */
+.lunch {
+overflow: visable;
+}
+
+.lunch-bg{
+    background-image: url(./images/lucia-images/lunch.jpg);
+    background-size: contain;
+    height: 600px;
+    /* background-position: 50% 64.95px; */
+}
+/* End of New Lunch */
+
 /* Dinner */
 .dinner {
   /* color: var(--mainBlack); */
 overflow: visable;
 }
 .bg-grey{
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 1.0);
 color: var(--mainGrey);
 }
 .dinner-bg{
-    background-image: url(./images/lucia-images/resturant.jpg);
-    background-size: cover;
+    background-image: url(./images/lucia-images/dinner.jpg);
+    background-size: contain;
     height: 600px;
-    background-position: 50% 64.95px;
+    /* background-position: 50% 64.95px; */
 }
 
 .parallax {
@@ -722,7 +738,12 @@ z-index: 2;
    padding: 2vh;
    background-color: #f7f7f7;
    bottom: 0%;
-}
+  /* position: absolute; */
+  /* bottom: 0;
+  width: 100%;
+  height: 2.5rem; */
+
+  }
 /* end of credits */
 
 /* Gallery */
