@@ -6,7 +6,7 @@ import EntreeIMG from "../images/lucia-images/Entree1.jpg";
 
 
 
-export default class Lunch extends Component {
+export default class Dinner extends Component {
 
   state = {
     menu: [
