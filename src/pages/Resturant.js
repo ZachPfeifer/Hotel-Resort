@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import DinningOptions from '../components/DinningOptions'
 import Dinner from "../components/Dinner";
 import Lunch from "../components/Lunch";
+import Alcohol from '../components/Resturant/Alcohol';
 
 
 const Resturant = () => {
@@ -26,6 +27,9 @@ const Resturant = () => {
         <Dinner />
       </section>
       <div className="space">      </div>
+      <section id="Alcohol">
+        <Alcohol />
+      </section>
 
     </React.Fragment>
   )
