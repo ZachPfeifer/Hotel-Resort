@@ -20,7 +20,7 @@ export default class NavBar extends Component {
         < div className="nav-center" >
           <div className="nav-header">
             <Link to="/">
-              <img src={logo} alt="Beach Resort" />
+              <img src={logo} alt="Beach Resort" className=" mx-auto" />
             </Link>
             <button
               className="nav-btn"
