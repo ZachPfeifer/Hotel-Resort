@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../components/Utilities/Hero'
 import Banner from '../components/Utilities/Banner'
 import { Link } from "react-router-dom";
-import DinningOptions from '../components/DinningOptions'
+import DinningOptions from '../components/Resturant/DinningOptions'
 import Dinner from "../components/Resturant/Dinner";
 import Lunch from "../components/Resturant/Lunch";
 import Alcohol from '../components/Resturant/Alcohol';
