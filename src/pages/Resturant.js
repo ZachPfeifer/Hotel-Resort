@@ -3,8 +3,8 @@ import Hero from '../components/Utilities/Hero'
 import Banner from '../components/Utilities/Banner'
 import { Link } from "react-router-dom";
 import DinningOptions from '../components/DinningOptions'
-import Dinner from "../components/Dinner";
-import Lunch from "../components/Lunch";
+import Dinner from "../components/Resturant/Dinner";
+import Lunch from "../components/Resturant/Lunch";
 import Alcohol from '../components/Resturant/Alcohol';
 
 

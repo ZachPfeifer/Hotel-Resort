@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 // import Title from "./Title";
 // import LunchImg from "../images/lucia-images/lunch.jpg";
-import Banner from './Utilities/Banner';
-import LunchIMG from "../images/lucia-images/lunch1.jpg";
+import Banner from '../Utilities/Banner';
+import LunchIMG from "../../images/lucia-images/lunch1.jpg";
 
 
 

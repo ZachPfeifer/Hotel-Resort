@@ -111,28 +111,28 @@ background: url("../src/images/lucia-images/bg-tunnel.jpg") center/cover no-repe
 }
 /* end of globals */
 /* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: .5rem 0rem 1rem 4rem;
+.navbar  {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  padding: .5rem 0rem 1rem 4rem !important;
   background: var(--offWhite);
   z-index: 1;
 }
 .nav-header {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
 }
 .nav-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+  outline: none !important;
 }
 .nav-icon {
-  font-size: 1.5rem;
-  color: var(--primaryColor);
+  font-size: 1.5rem !important;
+  color: var(--primaryColor)!important;
 }
 .nav-links {
   height: 0;
@@ -208,6 +208,8 @@ button, input, optgroup, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 7rem;
+
 }
 /* End of Hero */
 /* Banner */
