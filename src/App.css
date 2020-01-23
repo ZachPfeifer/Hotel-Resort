@@ -136,14 +136,15 @@ background: url("../src/images/lucia-images/bg-tunnel.jpg") center/cover no-repe
 }
 .nav-links {
   height: 0;
-  overflow: hidden;
-  transition: var(--mainTransition);
-  list-style-type: none;
+  overflow: hidden!important;
+  transition: var(--mainTransition)!important;
+  list-style-type: none!important;
 }
 .nav-links a {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
+  margin-right: 3rem;
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
