@@ -4,7 +4,7 @@ import defaultBcg from '../images/room-1.jpeg'
 import Banner from "../components/Utilities/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
-import StyledHero from "../components/StyledHero";
+import StyledHero from "../components/Utilities/StyledHero";
 // import Carousels from "../assets/Carousels";
 
 

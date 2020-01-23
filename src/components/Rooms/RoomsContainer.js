@@ -1,6 +1,6 @@
 import React from 'react'
 import RoomFilter from "./RoomFilter";
-import Loading from "../Loading";
+import Loading from "../Utilities/Loading";
 import RoomList from "./RoomsList.js";
 
 import { withRoomConsumer } from '../../context'
