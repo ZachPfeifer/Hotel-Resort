@@ -3,7 +3,7 @@ import Hero from '../components/Utilities/Hero'
 import Banner from '../components/Utilities/Banner'
 import { Link } from "react-router-dom";
 import Services from '../components/Services'
-import FeaturedRooms from '../components/FeaturedRooms'
+import FeaturedRooms from '../components/Rooms/FeaturedRooms'
 import Gallery from "../components/Gallery";
 
 
