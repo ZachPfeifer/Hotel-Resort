@@ -1,5 +1,5 @@
 import React from "react";
-import Room from "./Rooms/Room";
+import Room from "./Room";
 
 
 const RoomsList = ({ rooms }) => {
