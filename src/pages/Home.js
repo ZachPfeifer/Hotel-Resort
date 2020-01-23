@@ -2,9 +2,9 @@ import React from 'react'
 import Hero from '../components/Utilities/Hero'
 import Banner from '../components/Utilities/Banner'
 import { Link } from "react-router-dom";
-import Services from '../components/Services'
+import Services from '../components/Home/Services'
 import FeaturedRooms from '../components/Rooms/FeaturedRooms'
-import Gallery from "../components/Gallery";
+import Gallery from "../components/Home/Gallery";
 
 
 

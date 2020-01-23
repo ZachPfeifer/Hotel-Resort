@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Rooms from './pages/Rooms'
 import SingleRoom from './pages/SingleRoom'
 import Error from './pages/Error'
-import NavBar from './components/NavBar'
+import NavBar from './components/Home/NavBar'
 import Credits from "./assets/Credits";
 import Resturant from './pages/Resturant';
 import Cart from './pages/Cart'
