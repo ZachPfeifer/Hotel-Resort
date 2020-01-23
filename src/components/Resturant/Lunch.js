@@ -55,8 +55,8 @@ export default class Lunch extends Component {
   render() {
     return (
       <section className="lunch mb-5">
-        <div className=" lunch-bg parallax mx-auto">
-          <div className="container mt-5  d-flex justify-content-center">
+        <div className="container-fluid lunch-bg parallax mx-auto">
+          <div className="mt-5 d-flex justify-content-center">
             <div className="row">
               <div className="col-12">
                 <Banner title="Lunch Menu" subtitle="Dine on our Open Padio " children="" />
@@ -64,34 +64,34 @@ export default class Lunch extends Component {
             </div>
           </div>
           <div className="container-fluid over-flow">
-            <div className="row m-5 bg-grey ">
-              <div className="col-lg-6 col-sm-12">
-                <h3 className="text-gold m-2 pb-1"><i> Entrees:  </i></h3>
-                {this.state.menu.map((item, index) => {
-                  return <div key={index} className="price-wrap ml-3">
-                    <h5 className="price-header float-left mr-3 text-gold">{item.title}
-                    </h5>
-                    <div className="price-dots">
-                      <span className="separator-dots"></span>
-                    </div>
-                    <p className="price-price"><small><i>{item.price}</i></small></p>
-                    <p><i>{item.disc}</i></p>
-                    <hr />
+          </div>
+          <div className="row m-5 bg-grey menu-container mx-auto">
+            <div className="col-lg-6 col-sm-12">
+              <h3 className="text-gold m-2 pb-1"><i> Entrees:  </i></h3>
+              {this.state.menu.map((item, index) => {
+                return <div key={index} className="price-wrap ml-3">
+                  <h5 className="price-header float-left mr-3 text-gold">{item.title}
+                  </h5>
+                  <div className="price-dots">
+                    <span className="separator-dots"></span>
                   </div>
-                })}
-              </div>
-
-              <div className="col-lg-6 col-sm-12">
-                <div className="image-container mt-5 rounded pt-5 pr-5 offset-lg-2 col-lg-10">
-                  <img src={LunchIMG} alt="Entree Image" className="img-border img-fluid rounded mb-3 p-1" />
+                  <p className="price-price"><small><i>{item.price}</i></small></p>
+                  <p><i>{item.disc}</i></p>
+                  <hr />
                 </div>
-                <h4 className="text-gold m-2 pb-1"><i>Beverages:</i></h4>
-                {this.state.drinks.map((item, index) => {
-                  return <div key={index} className="mx-auto">
-                    <p className="ml-5"> {item.soda}</p>
-                  </div>
-                })}
+              })}
+            </div>
+
+            <div className="col-lg-6 col-sm-12">
+              <div className="image-container mt-5 rounded pt-5 pr-5 offset-lg-2 col-lg-10">
+                <img src={LunchIMG} alt="Entree Image" className="img-border img-fluid rounded mb-3 p-1" />
               </div>
+              <h4 className="text-gold m-2 pb-1"><i>Beverages:</i></h4>
+              {this.state.drinks.map((item, index) => {
+                return <div key={index} className="mx-auto">
+                  <p className="ml-5"> {item.soda}</p>
+                </div>
+              })}
             </div>
           </div>
         </div>

@@ -221,6 +221,7 @@ button, input, optgroup, select, textarea {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  margin-top: 6rem;
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -705,6 +706,11 @@ overflow: visable;
     background-size: contain;
     height: 600px;
     /* background-position: 50% 64.95px; */
+}
+
+.menu-container{
+  max-width: fit-content;
+
 }
 /* SPACE BETWEEN LUNCH/DINNER */
 .space{

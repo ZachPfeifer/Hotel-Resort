@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Title from "../Title";
+import Title from "../Utilities/Title";
 import { GiWineBottle, GiFoodChain, } from "react-icons/gi";
 
 export default class DinningOptions extends Component {
