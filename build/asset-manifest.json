@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7058eebe.chunk.css",
+    "main.js": "/static/js/main.fafe0644.chunk.js",
+    "main.js.map": "/static/js/main.fafe0644.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.844d2fb5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.844d2fb5.js.map",
+    "static/css/2.32cb66c2.chunk.css": "/static/css/2.32cb66c2.chunk.css",
+    "static/js/2.3e92fa68.chunk.js": "/static/js/2.3e92fa68.chunk.js",
+    "static/js/2.3e92fa68.chunk.js.map": "/static/js/2.3e92fa68.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.44314efbfb8a8193fd4ade0ccdfb8e28.js": "/precache-manifest.44314efbfb8a8193fd4ade0ccdfb8e28.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.32cb66c2.chunk.css.map": "/static/css/2.32cb66c2.chunk.css.map",
+    "static/css/main.7058eebe.chunk.css.map": "/static/css/main.7058eebe.chunk.css.map",
+    "static/js/2.3e92fa68.chunk.js.LICENSE": "/static/js/2.3e92fa68.chunk.js.LICENSE",
+    "static/media/App.css": "/static/media/stock-cabins-full.a4122b87.jpg",
+    "static/media/Entree1.jpg": "/static/media/Entree1.da3e7b30.jpg",
+    "static/media/loading-arrow.gif": "/static/media/loading-arrow.e9ea7394.gif",
+    "static/media/logo.svg": "/static/media/logo.7746c062.svg",
+    "static/media/lunch1.jpg": "/static/media/lunch1.e57905e2.jpg",
+    "static/media/room-1.jpeg": "/static/media/room-1.e928a5c4.jpeg",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg",
+    "static/media/wine.jpg": "/static/media/wine.85236bcf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.844d2fb5.js",
+    "static/css/2.32cb66c2.chunk.css",
+    "static/js/2.3e92fa68.chunk.js",
+    "static/css/main.7058eebe.chunk.css",
+    "static/js/main.fafe0644.chunk.js"
+  ]
+}
