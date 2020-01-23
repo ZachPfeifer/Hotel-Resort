@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from "react";
-import { RoomContext } from "../context";
-import Title from "./Utilities/Title";
+import { RoomContext } from "../../context";
+import Title from "../Utilities/Title";
 
 
 //NOTE Get all unique values (new Set())

@@ -1,5 +1,5 @@
 import React from 'react'
-import RoomFilter from "./RoomFilter.js";
+import RoomFilter from "../components/Rooms/RoomFilter";
 import Loading from "./Loading";
 import RoomList from "./RoomsList.js";
 
