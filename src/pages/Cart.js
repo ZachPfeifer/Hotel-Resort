@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Basket from "../components/Basket";
+import Basket from "../components/Cart/Basket";
 import { RoomContext } from '../context';
 // import Client from "../Contentful";
 
