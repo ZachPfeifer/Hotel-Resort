@@ -486,7 +486,7 @@ display: inline-block;
   /* transition: var(--mainTransition); */
   /* text-transform: uppercase; */
   cursor: pointer;
-  float: right;
+  /* float: right; */
 }
 
 .room-extras {
