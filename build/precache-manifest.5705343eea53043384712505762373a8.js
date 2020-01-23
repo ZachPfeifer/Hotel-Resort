@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbf8654e5d36fdbb053480584ebd5663",
+    "revision": "2a85ecb2a2848b3a983249a71a758b7b",
     "url": "lucia-lodge.netlify.com/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "lucia-lodge.netlify.com/static/css/2.f9cabd81.chunk.css"
   },
   {
-    "revision": "e6cb74edbac56092d9d9",
-    "url": "lucia-lodge.netlify.com/static/css/main.efc59a3e.chunk.css"
+    "revision": "de6a9312482f6de8d545",
+    "url": "lucia-lodge.netlify.com/static/css/main.9b039c82.chunk.css"
   },
   {
     "revision": "54dd623eaf49b91d069e",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "lucia-lodge.netlify.com/static/js/2.a8f985d9.chunk.js.LICENSE"
   },
   {
-    "revision": "e6cb74edbac56092d9d9",
-    "url": "lucia-lodge.netlify.com/static/js/main.a34e8a6b.chunk.js"
+    "revision": "de6a9312482f6de8d545",
+    "url": "lucia-lodge.netlify.com/static/js/main.2971cf43.chunk.js"
   },
   {
     "revision": "a7162db0afc99dc9ff14",

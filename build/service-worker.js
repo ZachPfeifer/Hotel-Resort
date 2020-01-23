@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "lucia-lodge.netlify.com/precache-manifest.2338091ac61b134cc99e907221bb2878.js"
+  "lucia-lodge.netlify.com/precache-manifest.5705343eea53043384712505762373a8.js"
 );
 
 self.addEventListener('message', (event) => {
