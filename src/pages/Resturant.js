@@ -27,6 +27,7 @@ const Resturant = () => {
         <Dinner />
       </section>
       <div className="space">      </div>
+      <div className="space">      </div>
       <section id="Alcohol">
         <Alcohol />
       </section>
