@@ -84,7 +84,7 @@ export default class Lunch extends Component {
 
             <div className="col-lg-6 col-sm-12">
               <div className="image-container mt-5 rounded pt-5 pr-5 offset-lg-2 col-lg-10">
-                <img src={LunchIMG} alt="Entree Image" className="img-border img-fluid rounded mb-3 p-1" />
+                <img src={LunchIMG} alt="Entree-Image" className="img-border img-fluid rounded mb-3 p-1"></img>
               </div>
               <h4 className="text-gold m-2 pb-1"><i>Beverages:</i></h4>
               {this.state.drinks.map((item, index) => {
